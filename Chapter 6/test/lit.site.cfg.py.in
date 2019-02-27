@@ -1,0 +1,9 @@
+@LIT_SITE_CFG_IN_HEADER@
+
+config.ch6_build_path = "@CH6_BUILD_ROOT@"
+config.llvm_tools_dir = "@LLVM_TOOLS_BINARY_DIR@"
+
+@LIT_SITE_CFG_IN_FOOTER@
+
+# Let the main config do the real work.
+lit_config.load_config(config, "@CMAKE_CURRENT_SOURCE_DIR@/lit.cfg.py")
